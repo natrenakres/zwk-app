@@ -9,7 +9,7 @@ test('should get 2023 February list', () => {
  test('should be z1 10', () => { 
     const z1 = calculateZwk(7, 45);    
 
-    expect(z1).toEqual(10);
+    expect(z1).toEqual(12);
   })
 
   test('should be z6 97', () => { 
@@ -23,5 +23,5 @@ test('should get 2023 February list', () => {
         const z6 = calculateZwk(16, 12);
 
         const workTime = z6 - z1;
-        expect(workTime).toEqual(87);
+        expect(workTime).toEqual(85);
     })

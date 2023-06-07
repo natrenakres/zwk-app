@@ -5,9 +5,7 @@ export function calculateZwk(hour, min) {
     const begin = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 6, 30, 0);
     const diff = end.getTime() - begin.getTime(); // This is the difference in milliseconds    
     const diffInMinutes = Math.round(diff / 60000); // convert to minutes
-    const zwc = Math.floor(diffInMinutes / 6);
-
-    console.log(zwc);
+    const zwc = Math.floor(diffInMinutes / 6);    
     return zwc;
 }
 
@@ -29,4 +27,9 @@ export function getMonthDays(month, year = new Date().getFullYear()) {
     }    
 
     return days;
+}
+
+
+export function getCurrentMonth() {
+    return new Date().getMonth();
 }
