@@ -33,3 +33,7 @@ export function getMonthDays(month, year = new Date().getFullYear()) {
 export function getCurrentMonth() {
     return new Date().getMonth();
 }
+
+export function IsWeekend(day) {
+    return day.getDay() === 0 || day.getDay() === 6;
+}

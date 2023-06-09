@@ -5,7 +5,7 @@ const SelectMonth = ({ month, setMonth }) => {
 
     return (
         <label htmlFor="Month">Month: 
-        <select value={month} onChange={e => setMonth(e.target.value)}>
+        <select value={month} onChange={e => setMonth(+e.target.value)}>
             {monthNames.map((monthName, index) => (
                 <option key={index} value={index}>{monthName}</option>
             ))}
