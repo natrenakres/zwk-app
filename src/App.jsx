@@ -9,7 +9,7 @@ const App = () => {
 
     return (
         <div>
-            <h1>ZWk App</h1>
+            <h1>ZWK App</h1>
             <SelectMonth month={month} setMonth={setMonth} />
             <CalenderDaysTable selectedMonth={month} />
             
